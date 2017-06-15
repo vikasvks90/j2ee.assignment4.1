@@ -1,0 +1,24 @@
+Problem Statement1:
+Step 1:Launch a new Windows command shell using the "Shell" button in the XAMPP control panel.
+
+Step 2:Use the mysql client to create a new, empty database to hold your data.e.g. "mydb".
+mysql --user=root --password=root -e "CREATE DATABASE mydb"
+
+Step 3:Use the mysql client to import the contents of the backup file(users.sql) into the new database.
+mysql --user=root --password=root --database=mydb < users.sql
+
+
+Problem Statement2:
+a. CREATE DATABASE BANK;
+b. USE BANK;
+c. CREATE TABLE CUSTOMER(
+	  C_ID VARCHAR(10),
+	  CNAME VARCHAR(20) NOT NULL,
+	  MNO INT,
+	  ADDRESS VARCHAR(30),
+	  CITY VARCHAR(10),
+	  PRIMARY KEY (C_ID)
+	);
+d.
+i.  ALTER TABLE CUSTOMER ADD DOB DATE;
+ii. ALTER TABLE CUSTOMER MODIFY ADDRESS VARCHAR(20);
